@@ -13,7 +13,7 @@ El sitio debe ser responsive, priorizando el uso de Flexbox y evitando utilizar 
 
 ## Vista Online
 
-
+Visualiza en [GitHub Pages](https://walfonso.github.io/minimaxing/)  
 
 
 
