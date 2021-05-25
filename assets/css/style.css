@@ -58,11 +58,33 @@ h4 {
 	font-size: 1em;
 }
 
+img.left {
+		float: left;
+		margin: 2px 1.25em 0 0;
+	}
+
+	img.top {
+		margin: 4px 0 2.25em 0;
+	}
+
 ul li a{
 	list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
+ul.link-list li {
+	border-top: solid 1px #ced0b7;
+	padding: 0.75em 0 0 0;
+	margin: 0.75em 0 0 0;
+	width: max-content;
+}
+	ul.link-list li:first-child {
+			padding-top: 0;
+			margin-top: 0;
+			border-top: 0;
+		}
+
 ul{
 		padding: 0.25em 0 0 0;
 	}
@@ -70,14 +92,20 @@ ul{
 a{
 	color: #5d93a2;
 	text-decoration: underline;
+	width: fit-content;
 }
 
 a:hover{
 	text-decoration: none;
 }
 
+p {
+    line-height: 1.8em;
+}
 
-
+p, ul{
+	margin-bottom: 1.25em;
+}                   
 .container{
 	margin: 0 auto;
 	max-width: 100%;
@@ -85,7 +113,8 @@ a:hover{
 }
 .page{
 	display: flex;
-	flex-flow: column nowrap;
+	justify-content: center;
+	flex-flow: column wrap;
 	background-color: #e3e9dc;
 
 }
@@ -217,16 +246,22 @@ a:hover{
 	flex-direction: column;
 	justify-content:flex-start;
   background: #fff;
-  padding: 4em 0;
+  padding: 0 0;
 }
+	.main .control{
+		padding: 0;
+		background-color: #fff;
+	}
 .row-one{
 	display: flex;
 	justify-content:flex-start;
+	flex-wrap: nowrap;
   background: #fff;
   padding: 4em 0;
 }
 	.left{
 		flex: 1 1 33.3%;
+		padding: 0px 50px 0px 50px ;
 	
 	}
 	.center{
@@ -242,17 +277,21 @@ a:hover{
   padding: 4em 0;
 }
 
+.control{
+	padding: 0;
+}
 /* Config Footer */
 footer{
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
 	background-color: #e3e9dc;
+    padding: 4em 0;
 }
 
 footer .row{
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	align-items: stretch;
 }
 
@@ -261,6 +300,35 @@ footer .row-links{
 	flex-wrap: nowrap;
 	
 }
+
+	.footer-left{
+		flex: 1 1 66.66%;
+		
+	
+	}
+	.footer-right{
+		flex: 1 1 33.333%;
+	}
+
+	.footer-right p{
+		margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.copyright{
+	justify-content: center;
+	align-self: center;
+  color: #A6A88F;
+  border-top: solid 1px #ced0b7;
+  padding: 3em 0 0 0;
+  margin: 3em 0 0 0;
+}
+.copyright a{
+	color:#A6A88F;
+}
+
 
 
 	.button {
@@ -289,3 +357,9 @@ footer .row-links{
 			background-color: #118eb1;
 			box-shadow: inset 0px 0px 0px 1px #3ecceb;
 		}
+
+.padding-ul{
+ 	padding: 0 3.125em 0 0;
+	list-style-type: none;
+}
+
