@@ -554,8 +554,10 @@ footer .padding-ul{
 	}
 		
 }
-@media screen and (max-width: 736px) {
-	 .container {
+
+
+@media (max-width: 736px) {
+ .container {
     width: calc(100% - 40px);
   }
 	.banner h2 {
@@ -569,6 +571,19 @@ footer .padding-ul{
   .banner-section {
     padding: 25px;
   }
+
+	.row-one{
+		flex-direction: column;	
+	}
+	.row-two{
+		flex-direction: column;	
+	}
+ 
+	footer .row {
+		flex-direction: column;
+	}
+	footer .row-links{
+		flex-direction: column;
+		justify-content: stretch;
+	}
 }
-
-
