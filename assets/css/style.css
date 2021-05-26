@@ -281,7 +281,6 @@ img.top {
 }
 
 .comment {
-/*    position: absolute; */
   top: 0;
   right: 0;
   height: 32px;
@@ -289,7 +288,7 @@ img.top {
   padding-left: 40px;
   background: url(images/icon-bubble.png) no-repeat;
 	float: right;
-   margin-top: -54px;
+  margin-top: -54px;
 }
 
 /*
@@ -303,6 +302,7 @@ img.top {
 li {
   list-style-type: none;
 }
+
 .control{
 	padding: 0;
 }
@@ -321,6 +321,7 @@ p {
 section ul li {
   display: flex;
 }
+
 .cols2 {
   display: flex;
   flex-direction: row;
@@ -358,7 +359,6 @@ footer .row{
 .row-links{
 	display: flex;
 	flex-wrap: nowrap;
-	
 }
 
 .footer-left{
@@ -420,4 +420,66 @@ footer .row{
  	padding: 0 3.125em 0 0;
 	list-style-type: none;
 }
+
+
+/* media query*/
+@media screen and (max-width: 1680px) {
+	.container {
+		width: 1200px;
+	}
+}
+@media screen and (max-width: 1280px) {
+  .container {
+    width: calc(100% - 70px);
+  }
+  .header nav a {
+    padding: 0 20px 0 20px;
+  }
+
+  .padding-cajas-centro {
+    padding: 0 2.188em 0 2.188em;
+  }
+
+  .left {
+    padding-left: 2.188em;
+  }
+  .right {
+    padding-right: 2.188em;
+  }
+  .left,
+  .right,
+  .center {
+    padding-top: 3.125em;
+  }
+}
+@media screen and (max-width: 1050px) {
+	.header nav a {
+		padding: 0 12px 0 12px;
+	}	
+}
+@media screen and (max-width: 980px) {
+	.container {
+		width: calc(100% - 100px);
+	}
+	.header {
+		display: none;
+	}
+}
+@media screen and (max-width: 736px) {
+	 .container {
+    width: calc(100% - 40px);
+  }
+	.banner h2 {
+		font-size: 2em;
+		padding: 1em;
+	}
+	.banner span {
+    font-size: 1.2em;
+    padding: 1em;
+  }
+  .banner-section {
+    padding: 25px;
+  }
+}
+
 
