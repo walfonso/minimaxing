@@ -241,33 +241,42 @@ p, ul{
 .row-one{
 	display: flex;
 	justify-content:flex-start;
+	align-items: stretch;
 	flex-wrap: nowrap;
-  	background: #fff;
-  	padding: 4em 0;
+  background: #fff;
+  padding: 4em 0;
 }
 
 .colum-one{
-	flex: 0 1 66.66;
+	flex: 0 1 66.66%;
 	
 }
 .colum-bar{
-	flex: 0 1 33.33;
+	flex: 0 1 33.33%;
 	padding: 0px 0px 0px 50px ;
 }
 .colum-bar .imagen{
 	    padding: 0.938em 0.938em 0.938em 3.192em;
 }
+
+.colum-bar-left{
+	flex: 0 1 33.33%;
+	padding: 0px 50px 0px 0px ;
+}
+
+
 .left{
-	flex: 1 1 33.3%;
-	padding: 0px 0px 0px 0px ;
+	flex: 10 1 33.33%;
+	
 }
 
 .center{
-	flex: 1 1 33.3%;
+	flex: 1 1 33.33%;
+
 }
 
 .right{
-	flex: 1 1 33.3%;;
+	flex: 1 1 33.33%;
 }
 
 .row-two{
@@ -445,7 +454,15 @@ footer .padding-ul{
 .colum-bar h2{
 	padding: 0 0 0 1.9em;
 }
- 
+
+.colum-bar-left .cols2 h2{
+	padding: 0 1.9em 0 0;
+}
+
+.colum-bar-left .cols2 .padding-ul{
+ 	padding: 0 3.125em 0 0;
+	list-style-type: none;
+}
 
 
 /* media query*/
@@ -453,11 +470,14 @@ footer .padding-ul{
 	.container {
 		width: 1200px;
 	}
+
 }
 @media screen and (max-width: 1280px) {
   .container {
     width: calc(100% - 70px);
   }
+		
+	}	
   .header nav a {
     padding: 0 20px 0 20px;
   }
@@ -479,6 +499,7 @@ footer .padding-ul{
   }
 }
 @media screen and (max-width: 1050px) {
+	
 	.header nav a {
 		padding: 0 12px 0 12px;
 	}	
@@ -490,6 +511,7 @@ footer .padding-ul{
 	.header {
 		display: none;
 	}
+		
 }
 @media screen and (max-width: 736px) {
 	 .container {
