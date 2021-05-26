@@ -283,7 +283,7 @@ p, ul{
 	display: flex;
 	justify-content:flex-start;
   background: #fff;
-  padding: 4em 0; 
+  /*padding: 4em 0;*/ 
 }
 
 .articulo {
