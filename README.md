@@ -7,9 +7,10 @@ En este proyecto se intenta reproducir  el siguiente diseño web: https://html5u
 El sitio debe ser responsive, priorizando el uso de Flexbox y evitando utilizar Media Queries a menos que sea estrictamente necesario. El sitio debe tener como minimo la copia exacta de las secciones navegables:
 
 - [x] Home Page
-- [x] Three Column
+- [x] two column #1 
+- [x] two column #2
 - [x] One Column
-
+- [x] Three Column
 
 ## Vista Online
 
