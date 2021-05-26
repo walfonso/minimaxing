@@ -99,6 +99,10 @@ p, ul{
 	margin-bottom: 1.25em;
 }
 
+* > p:last-child{
+	margin-bottom: 0 !important;
+}    
+
 .container{
 	margin: 0 auto;
 	max-width: 100%;
@@ -231,8 +235,8 @@ p, ul{
 	display: flex;
 	flex-direction: column;
 	justify-content:flex-start;
-  background: #fff;
-  padding: 0 0;
+  	background: #fff;
+ 	padding: 0 0;
 }
 	.main .control{
 		padding: 0;
@@ -243,14 +247,33 @@ p, ul{
 	justify-content:flex-start;
 	align-items: stretch;
 	flex-wrap: nowrap;
-  background: #fff;
-  padding: 4em 0;
+  	background: #fff;
+  	padding: 4em 0;
+}
+
+.left-bar{
+flex: 0 1 25%;
+	padding: 0px 50px 0px 0px ;
+
+}
+.col-center{
+	flex: 0 1 50%;
+}
+.right-bar{
+	flex: 0 1 25%;
+	padding: 0px 0px 0px 50px ;
 }
 
 .colum-one{
 	flex: 0 1 66.66%;
 	
 }
+
+.col-one{
+	flex: 0 1 auto;
+	
+}
+
 .colum-bar{
 	flex: 0 1 33.33%;
 	padding: 0px 0px 0px 50px ;
@@ -289,6 +312,7 @@ p, ul{
 .articulo {
 	flex: 2 2 50%;
 }
+
 img.top {
     margin: 4px 0 2.25em 0;
 }
@@ -451,6 +475,9 @@ footer .padding-ul{
 	padding: 0 0 0 1.9em;
 }
 
+.right-bar .cols2 h2{
+	padding: 0 0 0 0;
+}
 .colum-bar h2{
 	padding: 0 0 0 1.9em;
 }
@@ -460,7 +487,10 @@ footer .padding-ul{
 }
 
 .row-two .cols2 h2{
-	padding: 0 1.9em 0 0;
+	padding: 0 0 0 0;
+}
+.left-bar .cols2 h2{
+	padding: 0 0 0 0;
 }
 
 .colum-bar-left .cols2 .padding-ul{
@@ -468,6 +498,10 @@ footer .padding-ul{
 	list-style-type: none;
 }
 
+.right-bar .cols2 .padding-ul{
+ 	padding: 0 3.125em 0 0;
+	list-style-type: none;
+}
 
 /* media query*/
 @media screen and (max-width: 1680px) {
